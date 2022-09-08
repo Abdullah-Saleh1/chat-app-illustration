@@ -44,27 +44,27 @@ i {
 }
 body {
   font-family: 'Rubik', sans-serif;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 body::before {
   content: '';
-  width: 350px;
-  height: 650px;
+  width: 540px;
+  height: 1000px;
   background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
   position: absolute;
-  left: -36px;
-  top: -160px;
+  left: -55px;
+  top: -165px;
   border-radius: 0% 0% 50% 50% / 75% 75% 25% 25%;
   z-index: -1;
 }
 body::after {
   content: '';
-  width: 350px;
-  height: 650px;
+  width: 580px;
+  height: 1100px;
   background-color: var(--Light-Grayish-Violet);
   position: absolute;
-  right: -36px;
-  bottom: -160px;
+  right: -115px;
+  bottom: -255px;
   border-radius: 50% 50% 0% 0% / 25% 25% 75% 75% ;
   z-index: -1;  
 }
@@ -79,17 +79,19 @@ body::after {
 }
 .container .phone {
   width: 300px;
-  height: 450px;
+  height: 648px;
   position: absolute;
   top: 50%;
-  left: 237px;
+  left: 410px;
   transform: translateY(-50%);
   padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 15px 2px #ddd;
-  border-radius: 15px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1px 24px 80px -1px rgba(190,190,190,1);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .container .phone::before {
   content: '';
@@ -101,7 +103,9 @@ body::after {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  border-radius: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 20px;
 }
 .page .container .header {
   background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
@@ -122,7 +126,7 @@ body::after {
   transform: scaleX(0.7); 
   color: #fff;
   height: fit-content; 
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 10px;
 }
 .page .container .header i + img {
@@ -134,7 +138,7 @@ body::after {
 }
 .page .container .header .text h3 {
   color: var(--Light-Grayish-Violet); 
-  font-size: var(--Font-size); 
+  font-size: 14px; 
   font-weight: 500;
   margin-bottom: 4px;
 }
@@ -146,16 +150,16 @@ body::after {
   color: var(--Light-Grayish-Violet);
   position: absolute; 
   right: 15px;
-  font-size: 12px;
+  font-size: 10px;
 }
 .chat-box {
   background-color: var(--Light-Grayish-Violet);
   padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .chat-box .my-mess {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .chat-box .my-mess p {
   font-size: 10px;
@@ -178,14 +182,14 @@ body::after {
 }
 .chat-box .images img {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 15px;
 }
 .chat-box .his-mess {
   display: flex; 
   align-items: flex-end;
-  margin: 10px 0 25px;
+  margin: 10px 0 20px;
   flex-direction: column;
 }
 .chat-box .his-mess p {
@@ -215,7 +219,7 @@ body::after {
   line-height: 1.5;  
 }
 .offers {
-  margin: 10px 0 25px;
+  margin: 10px 0 20px;
 }
 .offers .off:first-child {
   margin-bottom: 10px;
@@ -253,16 +257,22 @@ body::after {
   display: flex;
   padding: 5px;
   background-color: var(--White);
-  border-radius: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .chat input {
   display: block;
   flex: 1; 
   outline: none; 
   border: none;
+  padding-left: 20px;
 }
 ::placeholder {
   color: var(--Grayish-Blue);
+  font-size: 12px;
 }
 .chat i {
   display: flex; 
@@ -282,7 +292,10 @@ body::after {
 }
 .page .container:last-child h1 {
   color: var(--Very-Dark-Desaturated-Violet);
-  margin-bottom: 30px;
+  margin-bottom: 25px; 
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 40px;
 }
 .page .container:last-child p {
   color: var(--Dark-Grayish-Violet); 
