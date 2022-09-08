@@ -5,23 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/all.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | [Chat App illustration]</title>
+
 </head>
 <body>
 
-  Samuel Green
-  Available to Walk
 
-  That sounds great. I’d be happy with that.
+  <div class="page">
+    <div class="container">
+      <div class="phone">
+        <div class="header">
+          <i class="fa-regular fa-chevron-left"></i>
+          <img src="images/avatar.jpg" alt="">
+          <div class="text">
+            <h3>Samuel Green</h3>
+            <p>Available to Walk</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="chat-box">
+          <div class="my-mess">
+            <p>That sounds great. I’d be happy with that.</p>
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="images">
+            <img src="images/dog-image-1.jpg" alt="">
+            <img src="images/dog-image-2.jpg" alt="">
+            <img src="images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="his-mess">
+            <p>Here are a few pictures. She’s a happy girl!</p>
+            <p>Can you make it?</p>
+          </div>
+          <div class="my-l-mess">
+            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          </div>
+          <div class="offers">
+            <div class="off">
+              <div class="check"></div>
+              <h4>$29</h4>
+              <p>30 minute walk</p>
+            </div>
+            <div class="off">
+              <div class="check"></div>
+              <h4>$49</h4>
+              <p>1 hour walk</p>
+            </div>
+          </div>
+          <div class="chat">
+            <input type="text" placeholder="Type a message…">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+      </div>
+    </div>
+  </div>
 
-  Could you send over some pictures of your dog, please?
+
+
+  <!-- 
 
   Here are a few pictures. She’s a happy girl!
 
@@ -41,11 +102,7 @@
 
   Stay in touch with our dog walkers through the chat interface. This makes it easy to 
   discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
+  your walker and book again all through the chat. -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

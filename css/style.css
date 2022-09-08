@@ -1,0 +1,293 @@
+:root {
+  /* Primary */
+
+  /* Text */
+  /* sub-heading at the top of the app UI */
+  --Pale-Violet: hsl(276, 100%, 81%); 
+  /* chat on the left */
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  /* chat on the right */
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  /* placeholder text */
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  /* main heading */
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  /* paragraph */
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+  /* Gradients */
+  /* These two colors are the vibrant background colors you see
+  throughout the design and are applied as a linear gradient: */
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* Secondary */
+  --White: hsl(0, 0%, 100%); 
+  /* app background */
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  /* submit button background */
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  /* radio button outline */
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+
+  /* Font */
+  --Font-size: 16px;
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-weight: 900;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  /* overflow: hidden; */
+}
+body::before {
+  content: '';
+  width: 350px;
+  height: 650px;
+  background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
+  position: absolute;
+  left: -36px;
+  top: -160px;
+  border-radius: 0% 0% 50% 50% / 75% 75% 25% 25%;
+  z-index: -1;
+}
+body::after {
+  content: '';
+  width: 350px;
+  height: 650px;
+  background-color: var(--Light-Grayish-Violet);
+  position: absolute;
+  right: -36px;
+  bottom: -160px;
+  border-radius: 50% 50% 0% 0% / 25% 25% 75% 75% ;
+  z-index: -1;  
+}
+.page {
+  display: flex; 
+  width: 100vw; 
+  height: 100vh;
+}
+.container {
+  flex: 1;
+  position: relative;
+}
+.container .phone {
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 237px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 2px #ddd;
+  border-radius: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.container .phone::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 30px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 40px;
+}
+.page .container .header {
+  background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 30px 15px 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; 
+  box-shadow: 0 10px 15px 0 rgba(221,221,221,0.76);
+  -webkit-box-shadow: 0 10px 15px 0 rgba(221,221,221,0.76);
+  -moz-box-shadow: 0 10px 15px 0 rgba(221,221,221,0.76);
+}
+.page .container .header i:first-child {
+  font-weight: 900;
+  transform: scaleX(0.7); 
+  color: #fff;
+  height: fit-content; 
+  font-size: 14px;
+  margin-right: 10px;
+}
+.page .container .header i + img {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  margin-right: 10px;
+}
+.page .container .header .text h3 {
+  color: var(--Light-Grayish-Violet); 
+  font-size: var(--Font-size); 
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.page .container .header .text p {
+  color: var(--Pale-Violet);
+  font-size: 7px; 
+}
+.page .container .header i:last-child {
+  color: var(--Light-Grayish-Violet);
+  position: absolute; 
+  right: 15px;
+  font-size: 12px;
+}
+.chat-box {
+  background-color: var(--Light-Grayish-Violet);
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.chat-box .my-mess {
+  margin-bottom: 25px;
+}
+.chat-box .my-mess p {
+  font-size: 10px;
+  color: var(--Moderate-Violet);
+  background-color: #ede5f4;
+  width: 165px;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 7px;
+  line-height: 1.5;  
+  margin-bottom: 10px;
+}
+.chat-box .my-mess p:last-child {
+  margin-bottom: 0;
+}
+.chat-box .images {
+  display: flex; 
+  gap: 10px; 
+  justify-content: flex-end;
+}
+.chat-box .images img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+.chat-box .his-mess {
+  display: flex; 
+  align-items: flex-end;
+  margin: 10px 0 25px;
+  flex-direction: column;
+}
+.chat-box .his-mess p {
+  font-size: 10px;
+  color: var(--Moderate-Violet);
+  background-color: var(--White);
+  width: 160px;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-right-radius: 7px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 15px 0 #ddd;
+}
+.chat-box .his-mess p:last-child {
+  width: fit-content;
+  margin-bottom: 0;
+}
+.my-l-mess p {
+  font-size: 10px;
+  color: var(--Moderate-Violet);
+  background-color: #ede5f4;
+  width: 160px;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 7px;
+  line-height: 1.5;  
+}
+.offers {
+  margin: 10px 0 25px;
+}
+.offers .off:first-child {
+  margin-bottom: 10px;
+}
+.offers .off {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 7px;
+  background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+  color: #fff;
+  width: 195px;
+  position: relative;
+}
+.offers .off .check {
+  width: 14px; 
+  height: 14px; 
+  background-color: transparent; 
+  border-radius: 50%; 
+  border: 1px solid var(--Very-Light-Magenta);
+  margin-right: 10px;
+}
+.offers .off h4 {
+  order: 1;
+  color: var(--Light-Grayish-Violet);
+  position: absolute;
+  right: 20px; 
+}
+.offers .off p {
+  font-size: 10px;
+  color: var(--Grayish-Blue);
+} 
+.chat {
+  display: flex;
+  padding: 5px;
+  background-color: var(--White);
+  border-radius: 20px;
+}
+.chat input {
+  display: block;
+  flex: 1; 
+  outline: none; 
+  border: none;
+}
+::placeholder {
+  color: var(--Grayish-Blue);
+}
+.chat i {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 14px;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  background-color: var(--Very-Dark-Desaturated-Violet); 
+  color: var(--White);
+  cursor: pointer;
+}
+.page .container:last-child {
+  display: flex;
+  align-items: center; 
+}
+.page .container:last-child h1 {
+  color: var(--Very-Dark-Desaturated-Violet);
+  margin-bottom: 30px;
+}
+.page .container:last-child p {
+  color: var(--Dark-Grayish-Violet); 
+  line-height: 1.7; 
+  max-width: 450px;
+}
+
+
